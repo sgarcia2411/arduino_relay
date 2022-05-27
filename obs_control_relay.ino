@@ -19,14 +19,18 @@ void loop() {
  }
   if (data == '1'){
     digitalWrite(RELE_A, HIGH);
+    digitalWrite(RELE_B, LOW);
   } else if (data == '0'){
     digitalWrite(RELE_A, LOW);
+    digitalWrite(RELE_B, LOW);
   }
 
   if (data == '3'){
     digitalWrite(RELE_B, HIGH);
+    digitalWrite(RELE_A, LOW);
   } else if (data == '2'){
     digitalWrite(RELE_B, LOW);
+    digitalWrite(RELE_A, LOW);
   }
 
    if (data == '5'){
